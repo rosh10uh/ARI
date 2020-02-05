@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extension\**" />
+    <Compile Remove="Interface\Specification\**" />
+    <EmbeddedResource Remove="Extension\**" />
+    <EmbeddedResource Remove="Interface\Specification\**" />
+    <None Remove="Extension\**" />
+    <None Remove="Interface\Specification\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mappings\BankDetailMapping.cs" />
+    <Compile Remove="Repositories\GetReadyUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Chassis.Domain.NHibernate\Chassis.Domain.NHibernate.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Domain\EMP.Management.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

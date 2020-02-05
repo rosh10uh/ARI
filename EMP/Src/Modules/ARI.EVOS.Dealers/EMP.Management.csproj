@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1367" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ARI.EVOS.Infra\EMP.Infra.csproj" />
+    <ProjectReference Include="..\..\Models\ARI.EVOS.Dealers.Models\EMP.Management.Models.csproj" />
+    <ProjectReference Include="..\..\Services\Dealers\ARI.EVOS.Dealer.AppServices\EMP.Management.AppServices.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Common\EMP.Common.csproj" />
+  </ItemGroup>
+
+</Project>

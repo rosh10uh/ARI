@@ -1,0 +1,8 @@
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.deps.json
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.AssemblyInfo.cs
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Common.Models.pdb

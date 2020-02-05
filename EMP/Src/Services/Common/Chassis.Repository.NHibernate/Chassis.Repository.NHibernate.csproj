@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Chassis.Repository.NHibernate</AssemblyName>
+    <RootNamespace>Chassis.Repository.NHibernate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="NHibernate" Version="5.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+    <ProjectReference Include="..\Chassis.Repository\Chassis.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

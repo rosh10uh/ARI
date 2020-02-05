@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Types\**" />
+    <EmbeddedResource Remove="Types\**" />
+    <None Remove="Types\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\EMP.Management.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Domain\Chassis.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

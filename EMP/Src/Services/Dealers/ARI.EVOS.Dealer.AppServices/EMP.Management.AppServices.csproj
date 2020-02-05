@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GetReady.cs" />
+    <Compile Remove="Interface\IGetReady.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\EMP.Management.Models.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Command\EMP.Management.Command.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Query\EMP.Management.Query.csproj" />
+  </ItemGroup>
+
+</Project>

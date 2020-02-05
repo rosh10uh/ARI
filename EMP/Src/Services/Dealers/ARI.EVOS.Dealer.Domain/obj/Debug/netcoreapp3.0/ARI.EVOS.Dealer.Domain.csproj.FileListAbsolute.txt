@@ -1,0 +1,15 @@
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.deps.json
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Infra.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\Chassis.Domain.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\Chassis.Domain.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\bin\Debug\netcoreapp3.0\ARI.EVOS.Infra.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.AssemblyInfo.cs
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.csproj.CopyComplete
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Dealers\ARI.EVOS.Dealer.Domain\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.pdb

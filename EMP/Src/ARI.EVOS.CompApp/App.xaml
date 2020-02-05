@@ -1,0 +1,17 @@
+﻿<prism:PrismApplication x:Class="ARI.EVOS.CompApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ARI.EVOS.CompApp"
+             xmlns:prism="http://prismlibrary.com/"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException">
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="/PresentationFramework.Classic;component/themes/classic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="ComboBoxItem">
+                <EventSetter Event="RequestBringIntoView" Handler="OnRequestBringIntoView"/>
+            </Style>
+        </ResourceDictionary>
+    </prism:PrismApplication.Resources>
+</prism:PrismApplication>

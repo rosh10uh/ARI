@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Log\**" />
+    <Compile Remove="Themes\**" />
+    <Compile Remove="ViewModels\**" />
+    <Compile Remove="Views\**" />
+    <EmbeddedResource Remove="Log\**" />
+    <EmbeddedResource Remove="Themes\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Log\**" />
+    <None Remove="Themes\**" />
+    <None Remove="ViewModels\**" />
+    <None Remove="Views\**" />
+    <Page Remove="Log\**" />
+    <Page Remove="Themes\**" />
+    <Page Remove="ViewModels\**" />
+    <Page Remove="Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.1-ci671" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.0.0-ci671" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.0.0" />
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
+    <PackageReference Include="Prism.Unity.Extensions" Version="7.2.0.661" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ARI.EVOS.Infra\EMP.Infra.csproj" />
+    <ProjectReference Include="..\Modules\ARI.EVOS.Common\EMP.Common.csproj" />
+    <ProjectReference Include="..\Modules\ARI.EVOS.Dealers\EMP.Management.csproj" />
+    <ProjectReference Include="..\Services\Common\Chassis.Logger\Chassis.Logger.csproj" />
+  </ItemGroup>
+
+</Project>

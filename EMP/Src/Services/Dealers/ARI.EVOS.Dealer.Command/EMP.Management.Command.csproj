@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extension\**" />
+    <EmbeddedResource Remove="Extension\**" />
+    <None Remove="Extension\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\EMP.Management.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Command\Chassis.Command.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Infrastructure\EMP.Management.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

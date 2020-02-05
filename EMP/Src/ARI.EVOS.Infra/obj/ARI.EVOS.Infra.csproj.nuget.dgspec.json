@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\ARI.EVOS.Infra.csproj": {}
+  },
+  "projects": {
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\ARI.EVOS.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\ARI.EVOS.Infra.csproj",
+        "projectName": "ARI.EVOS.Infra",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\ARI.EVOS.Infra.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            },
+            "Prism.Validation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

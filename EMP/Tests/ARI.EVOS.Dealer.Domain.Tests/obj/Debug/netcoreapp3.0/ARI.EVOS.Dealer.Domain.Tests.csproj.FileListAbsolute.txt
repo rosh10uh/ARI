@@ -1,0 +1,3 @@
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Tests\ARI.EVOS.Dealer.Domain.Tests\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.Tests.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Tests\ARI.EVOS.Dealer.Domain.Tests\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.Tests.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Tests\ARI.EVOS.Dealer.Domain.Tests\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealer.Domain.Tests.AssemblyInfo.cs

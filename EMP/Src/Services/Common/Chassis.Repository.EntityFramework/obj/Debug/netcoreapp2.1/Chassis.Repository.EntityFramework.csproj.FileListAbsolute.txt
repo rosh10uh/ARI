@@ -1,0 +1,11 @@
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\bin\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.deps.json
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\bin\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\bin\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\bin\Debug\netcoreapp2.1\Chassis.Repository.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\bin\Debug\netcoreapp2.1\Chassis.Repository.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.AssemblyInfo.cs
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.csproj.CopyComplete
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Services\Common\Chassis.Repository.EntityFramework\obj\Debug\netcoreapp2.1\Chassis.Repository.EntityFramework.pdb

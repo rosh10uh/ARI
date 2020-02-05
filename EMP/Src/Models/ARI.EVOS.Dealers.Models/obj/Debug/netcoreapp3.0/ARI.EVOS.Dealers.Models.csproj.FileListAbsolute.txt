@@ -1,0 +1,13 @@
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.deps.json
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Infra.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\bin\Debug\netcoreapp3.0\ARI.EVOS.Infra.pdb
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.Messages.resources
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.csproj.GenerateResource.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.AssemblyInfo.cs
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.csproj.CopyComplete
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.dll
+C:\Roshan Patel\ARI\exercise\Exrecise2\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Dealers.Models\obj\Debug\netcoreapp3.0\ARI.EVOS.Dealers.Models.pdb

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chassis.Domain\Chassis.Domain.csproj" />
+    <ProjectReference Include="..\Chassis.Repository.EntityFramework\Chassis.Repository.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>

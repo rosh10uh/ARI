@@ -1,0 +1,16 @@
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.deps.json
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.dll
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.pdb
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.AssemblyInfo.cs
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.dll
+C:\Roshan Patel\ARI\exercise\Final\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.pdb
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.deps.json
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.dll
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\bin\Debug\netcoreapp3.0\EMP.Common.Models.pdb
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.csprojAssemblyReference.cache
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.AssemblyInfoInputs.cache
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.AssemblyInfo.cs
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.dll
+C:\Roshan Patel\ARI\Backup\DailyUpdateFile\ARI\ARI.EVOS\Src\Models\ARI.EVOS.Common.Models\obj\Debug\netcoreapp3.0\EMP.Common.Models.pdb

@@ -1,0 +1,1357 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Dealers\\ARI.EVOS.Dealers.csproj": {}
+  },
+  "projects": {
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj",
+        "projectName": "ARI.EVOS.Infra",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            },
+            "Prism.Validation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj",
+        "projectName": "ARI.EVOS.Common.Models",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj",
+        "projectName": "EMP.Management.Models",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Prism.Validation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\ARI.EVOS.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\ARI.EVOS.Common.csproj",
+        "projectName": "ARI.EVOS.Common",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\ARI.EVOS.Common.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Dealers\\ARI.EVOS.Dealers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Dealers\\ARI.EVOS.Dealers.csproj",
+        "projectName": "ARI.EVOS.Dealers",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Dealers\\ARI.EVOS.Dealers.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Dealers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\ARI.EVOS.Infra\\EMP.Infra.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\ARI.EVOS.Common.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Modules\\ARI.EVOS.Common\\ARI.EVOS.Common.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\ARI.EVOS.Dealer.AppServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\ARI.EVOS.Dealer.AppServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\Chassis.Command.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\Chassis.Command.csproj",
+        "projectName": "Chassis.Command",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\Chassis.Command.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[1.19.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\Chassis.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\Chassis.Dapper.csproj",
+        "projectName": "Chassis.Dapper",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\Chassis.Dapper.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\Chassis.EmbeddedResource.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\Chassis.EmbeddedResource.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\Chassis.Query.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\Chassis.Query.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.19.50, )"
+            },
+            "RazorEngine.NetCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\Chassis.Domain.NHibernate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\Chassis.Domain.NHibernate.csproj",
+        "projectName": "Chassis.Domain.NHibernate",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\Chassis.Domain.NHibernate.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\Chassis.Repository.NHibernate.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\Chassis.Repository.NHibernate.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj",
+        "projectName": "Chassis.Domain",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\Chassis.EmbeddedResource.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\Chassis.EmbeddedResource.csproj",
+        "projectName": "Chassis.EmbeddedResource",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\Chassis.EmbeddedResource.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.EmbeddedResource\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\Chassis.Query.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\Chassis.Query.csproj",
+        "projectName": "Chassis.Query",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\Chassis.Query.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Query\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj",
+        "projectName": "Chassis.RegisterServices",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\Chassis.Repository.NHibernate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\Chassis.Repository.NHibernate.csproj",
+        "projectName": "Chassis.Repository.NHibernate",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\Chassis.Repository.NHibernate.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository.NHibernate\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\Chassis.Repository.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\Chassis.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\Chassis.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\Chassis.Repository.csproj",
+        "projectName": "Chassis.Repository",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\Chassis.Repository.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\ARI.EVOS.Dealer.AppServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\ARI.EVOS.Dealer.AppServices.csproj",
+        "projectName": "ARI.EVOS.Dealer.AppServices",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\ARI.EVOS.Dealer.AppServices.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.AppServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\ARI.EVOS.Dealer.Command.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\ARI.EVOS.Dealer.Command.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\ARI.EVOS.Dealer.Query.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\ARI.EVOS.Dealer.Query.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\ARI.EVOS.Dealer.Command.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\ARI.EVOS.Dealer.Command.csproj",
+        "projectName": "ARI.EVOS.Dealer.Command",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\ARI.EVOS.Dealer.Command.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Command\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\Chassis.Command.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Command\\Chassis.Command.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\ARI.EVOS.Dealer.Infrastructure.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\ARI.EVOS.Dealer.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj",
+        "projectName": "ARI.EVOS.Dealer.Domain",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\ARI.EVOS.Dealer.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\ARI.EVOS.Dealer.Infrastructure.csproj",
+        "projectName": "ARI.EVOS.Dealer.Infrastructure",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\ARI.EVOS.Dealer.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\Chassis.Domain.NHibernate.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain.NHibernate\\Chassis.Domain.NHibernate.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\ARI.EVOS.Dealer.Query.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\ARI.EVOS.Dealer.Query.csproj",
+        "projectName": "ARI.EVOS.Dealer.Query",
+        "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\ARI.EVOS.Dealer.Query.csproj",
+        "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Query\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+          "http://103.249.120.58:8081/repository/nuget-group": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Common.Models\\ARI.EVOS.Common.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Models\\ARI.EVOS.Dealers.Models\\EMP.Management.Models.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\Chassis.Dapper.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Dapper\\Chassis.Dapper.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.RegisterServices\\Chassis.RegisterServices.csproj"
+              },
+              "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj": {
+                "projectPath": "C:\\Roshan Patel\\ARI\\exercise\\Exrecise2\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

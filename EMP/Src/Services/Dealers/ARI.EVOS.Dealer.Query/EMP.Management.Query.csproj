@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mapper\**" />
+    <Compile Remove="QueryHandlers\**" />
+    <EmbeddedResource Remove="Mapper\**" />
+    <EmbeddedResource Remove="QueryHandlers\**" />
+    <None Remove="Mapper\**" />
+    <None Remove="QueryHandlers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sql\GetCountryDetail.sql" />
+    <None Remove="Sql\GetEmployee.sql" />
+    <None Remove="Sql\GetEmployeesList.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\GetCountryDetail.sql" />
+    <EmbeddedResource Include="Sql\GetEmployee.sql" />
+    <EmbeddedResource Include="Sql\GetEmployeesList.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Common.Models\EMP.Common.Models.csproj" />
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\EMP.Management.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Dapper\Chassis.Dapper.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Domain\EMP.Management.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

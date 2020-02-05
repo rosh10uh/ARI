@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UpdateGetReadyModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Validation" Version="1.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ARI.EVOS.Infra\EMP.Infra.csproj" />
+  </ItemGroup>
+</Project>

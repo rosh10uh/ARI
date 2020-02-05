@@ -1,0 +1,14 @@
+﻿SELECT EMPLOYEEID AS EmployeeId,
+	   COUNTRYCODE AS CountryCode,
+	   FIRSTNAME AS FirstName,
+	   LASTNAME AS LastName,
+	   EMAIL AS Email,
+	   ADDRESS1 AS Address1,
+	   ADDRESS2 AS Address2,
+	   ADDRESS3 AS Address3,
+	   LANDMARK AS LandMark,
+	   BANKNAME AS BankName,
+	   ACCOUNTNUMBER AS AccountNumber
+FROM EMPLOYEE
+WHERE (:CountryCode IS NULL OR COUNTRYCODE=:CountryCode)
+	AND (UPPER(TRIM(:EmployeeId)) IS NULL OR UPPER(TRIM(EMPLOYEEID))= UPPER(TRIM(:EmployeeId)))
