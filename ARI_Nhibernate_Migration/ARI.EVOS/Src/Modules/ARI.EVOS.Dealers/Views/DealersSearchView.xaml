@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="ARI.EVOS.Dealers.Views.DealersSearchView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ARI.EVOS.Dealers.Views"
+             mc:Ignorable="d"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True" Padding="25" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <Grid Height="Auto" Width="Auto" MinHeight="750" MinWidth="780">
+        <StackPanel Margin="0,-2,0,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Grid Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*" />
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lblCountryCode" Content="Country Code:" Grid.Row="0" Grid.Column="0" Margin="5,0,0,5" FontFamily="MS Sans Serif" TabIndex="0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lblMake" Content="Make:" Grid.Row="0" Grid.Column="1" Margin="35,0,50,5" FontFamily="MS Sans Serif" TabIndex="3" HorizontalAlignment="Stretch"/>
+                <Label x:Name="lblDealerId" Content="Dealer ID:" Grid.Row="0" Grid.Column="2" Margin="80,0,0,5" FontFamily="MS Sans Serif" TabIndex="6" HorizontalAlignment="Stretch"/>
+                <Label x:Name="lblName" Content="Name:" Grid.Row="0" Grid.Column="3" Margin="60,0,0,5" FontFamily="MS Sans Serif" TabIndex="7" HorizontalAlignment="Stretch"/>
+                <ComboBox x:Name="cmbCountryCode" Height="30" Grid.Row="1" Grid.Column="0" Margin="5,0,-20,0" FontFamily="MS Sans Serif" ItemsSource="{Binding Countries}" 
+                          SelectedItem="{Binding Country}" DisplayMemberPath="CountryName" SelectedValuePath="CountryCode" MinHeight="27" Width="150"  
+                          HorizontalContentAlignment="Stretch" TabIndex="13">
+                    <ComboBox.InputBindings>
+                        <KeyBinding Key="Return"  Command="{Binding SearchCommand}" CommandParameter="{Binding ElementName=cmbCountryCode, Path=Text}" />
+                    </ComboBox.InputBindings>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding CountryChangeCommand}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+                <ComboBox x:Name="cmbMake" Grid.Row="1" Grid.Column="1" Margin="0,0,-110,0" ItemsSource="{Binding Path=Makes}" SelectedItem="{Binding Path=Make}" DisplayMemberPath="MakeDescription" 
+                          SelectedValuePath="MakeCode" MinHeight="27" Width="160" Height="30" TabIndex="1" HorizontalContentAlignment="Stretch">
+                    <ComboBox.InputBindings>
+                        <KeyBinding Key="Return"  Command="{Binding SearchCommand}" CommandParameter="{Binding ElementName=cmbMake, Path=Text}"/>
+                    </ComboBox.InputBindings>
+                </ComboBox>
+                <TextBox x:Name="txtDealerId" Grid.Row="1" Grid.Column="2" Margin="0,0,-130,0" Text="{Binding Path=DealersSearch.DealerId,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Height="30" Width="100" VerticalAlignment="Top"  MaxLength="0" TabIndex="2" HorizontalContentAlignment="Stretch">
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Return"  Command="{Binding SearchCommand}" CommandParameter="{Binding ElementName=txtDealerId, Path=Text}"/>
+                    </TextBox.InputBindings>
+                </TextBox>
+                <TextBox x:Name="txtVendorName" Grid.Row="1" Grid.Column="3" Margin="0,0,-140,0" Text="{Binding Path=DealersSearch.VendorName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Height="30" Width="120"  MaxLength="0" TabIndex="4" HorizontalContentAlignment="Stretch">
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Return"  Command="{Binding SearchCommand}" CommandParameter="{Binding ElementName=txtVendorName, Path=Text}"/>
+                    </TextBox.InputBindings>
+                </TextBox>
+                <Button x:Name="btnSearch" Content="Search" Grid.Row="1" Grid.Column="4" Margin="80,-2,-250,0" Height="30" Width="150" VerticalAlignment="Top" HorizontalAlignment="Right" Command="{Binding Path=SearchCommand }" FontFamily="MS Sans Serif" TabIndex="5" HorizontalContentAlignment="Center"/>
+            </Grid>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <DataGrid x:Name="_dgSearchResult" Margin="5,31,21,-263" FontFamily="MS Sans Serif"   AutoGenerateColumns="False" SelectionMode="Single" ItemsSource="{Binding Path=Dealers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" BorderThickness="0.5" Width="Auto" Height="470" MinHeight="450" IsReadOnly="True" CanUserAddRows="False" IsSynchronizedWithCurrentItem="False" SelectedItem="{Binding Dealers,Mode=OneTime}" Validation.ErrorTemplate="{x:Null}" VerticalScrollBarVisibility="Auto" IsEnabled="{Binding Path=IsActiveDataGrid,Mode=TwoWay}" SelectionUnit="FullRow"  TabIndex="9">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <prism:InvokeCommandAction Command="{Binding SelectDealerCommand}" CommandParameter="{Binding SelectedItem, ElementName=_dgSearchResult}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Dealer" Binding="{Binding DealerId}" Width="67*"/>
+                        <DataGridTextColumn Header="Make" Binding="{Binding Make}" Width="64*" />
+                        <DataGridTextColumn Header="VendorId" Binding="{Binding VendorId}" Width="68*"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding VendorName}" Width="68*" />
+                        <DataGridTextColumn Header="City" Binding="{Binding City}" Width="68*"/>
+                        <DataGridTextColumn Header="State" Binding="{Binding State}" Width="67*"/>
+                        <DataGridTextColumn Header="Zip" Binding="{Binding ZipCode}" Width="68*"/>
+                        <DataGridTextColumn Header="S/D/B" Binding="{Binding SellingDelivInd}" Width="66*"/>
+                        <DataGridTextColumn Header="Rating" Binding="{Binding DealerRating}" Width="66*"/>
+                        <DataGridTextColumn Header="Comments" Binding="{Binding DealerComments}" Width="73*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            <Grid Width="700" MaxWidth="700" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="btnAddDealer" Content="Add Dealer" Grid.Row="0"  Margin="180,280,-200,-286" Height="30" Width="150" FontFamily="MS Sans Serif" Command="{Binding Path=AddDealerCommand }" TabIndex="10"/>
+                <Button x:Name="btnClearSelection" Content="Clear Selection" Grid.Row="0" Height="30" Width="150"  Margin="355,280,-350,-286" FontFamily="MS Sans Serif" Command="{Binding Path=ClearSelectionCommand}"   TabIndex="11"/>
+                <Button x:Name="btnExit" Content="Exit" Grid.Row="0" Height="30" Width="150" Margin="530,280,-500,-286" FontFamily="MS Sans Serif" Command="{Binding Path=ExitCommand }" TabIndex="12"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

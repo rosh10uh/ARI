@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.1-ci671" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.0.0-ci671" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.0.0" />
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
+    <PackageReference Include="Prism.Unity.Extensions" Version="7.2.0.661" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Log\" />
+    <Folder Include="Themes\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ARI.EVOS.Infra\ARI.EVOS.Infra.csproj" />
+    <ProjectReference Include="..\Modules\ARI.EVOS.Common\ARI.EVOS.Common.csproj" />
+    <ProjectReference Include="..\Modules\ARI.EVOS.Dealers\ARI.EVOS.Dealers.csproj" />
+    <ProjectReference Include="..\Services\Common\Chassis.Logger\Chassis.Logger.csproj" />
+  </ItemGroup>
+
+</Project>

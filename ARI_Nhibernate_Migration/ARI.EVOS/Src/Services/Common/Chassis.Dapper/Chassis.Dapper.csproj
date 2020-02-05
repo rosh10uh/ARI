@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extension\DispatcherExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Utility\QueryDispatcher.cs~RF2f772d4b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.50" />
+    <PackageReference Include="RazorEngine.NetCore" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chassis.EmbeddedResource\Chassis.EmbeddedResource.csproj" />
+    <ProjectReference Include="..\Chassis.Query\Chassis.Query.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Types\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\ARI.EVOS.Dealers.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Domain\Chassis.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

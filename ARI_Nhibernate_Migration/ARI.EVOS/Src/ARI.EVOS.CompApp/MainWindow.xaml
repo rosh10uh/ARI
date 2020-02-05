@@ -1,0 +1,18 @@
+﻿<Window x:Class="ARI.EVOS.CompApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ARI.EVOS.CompApp"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        MinWidth="830" MinHeight="750"  
+        MaxWidth="1280" MaxHeight="1024"
+        ResizeMode="CanResize" 
+        xmlns:prism="http://prismlibrary.com/" prism:ViewModelLocator.AutoWireViewModel="True" WindowStyle="ThreeDBorderWindow"  WindowState="Normal">
+    <DockPanel>
+        <ContentControl prism:RegionManager.RegionName="TopRegion" DockPanel.Dock="Top"/>
+        <ContentControl prism:RegionManager.RegionName="BottomRegion" DockPanel.Dock="Bottom"/>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+    </DockPanel>
+</Window>

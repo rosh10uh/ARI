@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\**" />
+    <Compile Remove="Utility\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Utility\**" />
+    <None Remove="Services\**" />
+    <None Remove="Utility\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\IQueryDispatcher.cs" />
+    <Compile Remove="Interfaces\IQueryInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+  </ItemGroup>
+
+</Project>

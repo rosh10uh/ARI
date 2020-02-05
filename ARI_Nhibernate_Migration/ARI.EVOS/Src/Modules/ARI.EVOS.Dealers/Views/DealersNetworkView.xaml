@@ -1,0 +1,372 @@
+﻿<UserControl x:Class="ARI.EVOS.Dealers.Views.DealersNetworkView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+               mc:Ignorable="d"
+        MinHeight="800" Width="Auto"
+        xmlns:viewmodel="clr-namespace:ARI.EVOS.Dealers.ViewModels"
+             xmlns:views="clr-namespace:ARI.EVOS.Dealers.Views"
+              xmlns:prism="http://prismlibrary.com/"             
+        prism:ViewModelLocator.AutoWireViewModel="True"
+          
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" HorizontalAlignment="Center">
+    <Grid MinHeight="800" Height="Auto" Width="Auto"  Margin="0,-50,100,0" HorizontalAlignment="Stretch">
+        <StackPanel Margin="0,1,-100,2" Width="Auto" HorizontalAlignment="Right">
+            <Grid  Margin="0,10,0,25" Height="800" HorizontalAlignment="Stretch" Width="Auto">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="11.56"/>
+                    <RowDefinition Height="23.44"/>
+                    <RowDefinition Height="Auto" MinHeight="0"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblConCode" Content="Country Code:"  FontFamily="MS Sans Serif" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="6,40,70,4" TabIndex="138"/>
+                <ComboBox x:Name="cmbCountryCode"  Grid.Column="0"  Grid.Row="1" 
+                  Margin="10,59,-1,10" ItemsSource="{Binding Countries}" SelectedItem="{Binding Country}" DisplayMemberPath="CountryName" SelectedValuePath="CountryCode" SelectedValue="{Binding SelectedCountry}" TabIndex="98">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding CountryChangeCommand}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+
+                <Label x:Name="lblMake" Content="Make:" FontFamily="MS Sans Serif" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,40,84,587" Grid.RowSpan="3" TabIndex="102"/>
+                <ComboBox x:Name="cmbMake"  Grid.Column="1"  Grid.Row="1" Margin="10,58,5,11" ItemsSource="{Binding Path=Makes}"  SelectedItem="{Binding Path=Make}" DisplayMemberPath="MakeDescription" SelectedValuePath="MakeCode" SelectedValue="{Binding SelectedMake}" TabIndex="0"/>
+
+                <Label x:Name="lblDealerId" FontFamily="MS Sans Serif" Content="Dealer ID:" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="1,40,88,588" Grid.RowSpan="3" TabIndex="101"/>
+                <TextBox x:Name="txtDealerId" Grid.Column="2"  Grid.Row="1" Margin="5,59,5,12" Text="{Binding Path=DealerNetwork.DealerId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Validation.ErrorTemplate="{x:Null}" MaxLength="8" TabIndex="1"/>
+                <Label x:Name="lblName" FontFamily="MS Sans Serif" Content="Name:" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Margin="-2,40,88,589" Grid.RowSpan="3" TabIndex="27"/>
+                <TextBox x:Name="txtName" Grid.Column="3"  Grid.Row="1" Margin="1,58,5,13" Text="{Binding Path=DealerNetwork.VendorName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="30" TabIndex="2"/>
+                <Label x:Name="lblVendorId" FontFamily="MS Sans Serif" Content="Vendor ID:" Grid.Row="1" Grid.Column="4" Margin="0,40,0,7" TabIndex="28"/>
+                <TextBox x:Name="txtVendorId" Grid.Column="4"  Grid.Row="1" Margin="5,58,5,13" IsEnabled="False" Text="{Binding Path=DealerNetwork.VendorId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="10" TabIndex="3"/>
+
+                <Button x:Name="btnEmail" Grid.Row="0" Grid.Column="5" Margin="4,41,4,14" Grid.RowSpan="2" Command="{Binding AddEmailCommand ,UpdateSourceTrigger=PropertyChanged}" TabIndex="141">
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbEmail" Text="Addl Email" TextWrapping="Wrap" TextAlignment="Center" Width="39"/>
+                </Button>
+
+
+                <Button x:Name="btnVendorInfo" Grid.Row="0" Grid.Column="6" Grid.RowSpan="2" Margin="4,41,-2,14" Command="{Binding EmailDetailsCommand,UpdateSourceTrigger=PropertyChanged}" TabIndex="4">
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbVendorInfo" Text="Change Vendor Info" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="80"/>
+                </Button>
+
+                <Button x:Name="btnVendorIdAssign" Grid.Row="0" Grid.Column="7" Grid.RowSpan="2" Margin="4,41,-2,14"  TabIndex="5">
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbVendorIdAssign" Text="Vendor ID Assignment" TextWrapping="Wrap" TextAlignment="Center" Width="80"/>
+                </Button>
+                <Button x:Name="btnStatusInfo"  Grid.Row="1" Grid.Column="8" Margin="4,41,4,14" TabIndex="124">
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbStatusInfo" Text="Status Reporting Info." TextWrapping="Wrap" TextAlignment="Center" Width="94"/>
+                </Button>
+
+                <GroupBox FontFamily="MS Sans Serif" x:Name="gbContactInfo"  Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="3" BorderThickness="1" BorderBrush="Gray" Header="Contact Information:" Margin="5,90,10,701" Height="200" Grid.RowSpan="3" TabIndex="26">
+
+                    <Grid Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="0,0,-2,0" Height="175" >
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="20*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblContact1"  Content="Contact 1:" Grid.Row="0" Grid.Column="0" TabIndex="41"/>
+                        <TextBox x:Name="txtContact1"  Grid.Row="0" Margin="75,3,40,2" Height="20" Grid.ColumnSpan="3" Text="{Binding Path=DealerNetwork.Contact1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="30" TabIndex="7"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblPhone1" Content="Phone 1:" Grid.Row="1" Grid.Column="0" TabIndex="47"/>
+                        <TextBox x:Name="txtPhone1"  Grid.Row="1" Margin="75,6,75,4" Height="20" Grid.ColumnSpan="3" Text="{Binding Path=DealerNetwork.Phone1Number,StringFormat='\{0,0\}', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="15" TabIndex="64" />
+                        <TextBox x:Name="txtPhonec1" Grid.Column="2"  Grid.Row="1" Margin="5,6,9,4" Height="20" Text="{Binding Path=DealerNetwork.Phone1Exchange, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="4" TabIndex="9" />
+                        <Label FontFamily="MS Sans Serif" x:Name="lblContact2" Content="Contact 2:" Grid.Row="2" Grid.Column="0" TabIndex="46"/>
+                        <TextBox x:Name="txtContact2"  Grid.Row="2" Grid.ColumnSpan="3" Margin="75,4,40,6" Height="20" Text="{Binding Path=DealerNetwork.Contact2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="30" TabIndex="30"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblPhone2" Content="Phone 2:" Grid.Row="3" Grid.Column="0" TabIndex="48" />
+                        <TextBox x:Name="txtPhone2"  Grid.Row="3" Grid.ColumnSpan="3" Margin="75,4,75,6" Height="20" Text="{Binding Path=DealerNetwork.Phone2Number, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="15" TabIndex="11"/>
+                        <TextBox x:Name="txtPhonec2" Grid.Column="2"  Grid.Row="3" Margin="5,4,10,6" Height="20" Text="{Binding Path=DealerNetwork.Phone2Exchange, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="4" TabIndex="12"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblFax" Content="Fax:" Grid.Row="4" Grid.Column="0" TabIndex="49"/>
+                        <TextBox  x:Name="txtFax"  Grid.Row="4" Grid.ColumnSpan="3" Margin="75,4,40,6" Height="20" Text="{Binding Path=DealerNetwork.FaxNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="15" TabIndex="13"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblEmail" Content="Email:" Grid.Row="5" Grid.Column="0" Margin="0,4,0,-4" TabIndex="59"/>
+                        <TextBox x:Name="txtEmail"  Grid.Row="5" Grid.ColumnSpan="3" Margin="75,6,40,7" Height="20" Text="{Binding Path=DealerNetwork.Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="40" TabIndex="14"/>
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox FontFamily="MS Sans Serif" x:Name="gbAddress" Grid.Column="3" Grid.Row="1"  Grid.ColumnSpan="4" BorderThickness="1" BorderBrush="Gray" Header="Address:" Margin="10,90,10,701" Height="200" Grid.RowSpan="3" TabIndex="25">
+
+                    <Grid Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="4" Margin="0,0,12,0" Height="178">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="15*"/>
+                            <ColumnDefinition Width="25*"/>
+                            <ColumnDefinition Width="20*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblAddress1" Content="Address 1:" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,0,93,0" TabIndex="30"/>
+                        <TextBox x:Name="txtAddress1" Grid.Row="0" Height="20" Grid.ColumnSpan="5" Margin="80,4,10,1" Text="{Binding Path=DealerNetwork.Address1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="35" TabIndex="15"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblAddress2" Content="Address 2:" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,0,93,28" Grid.RowSpan="2" TabIndex="34"/>
+                        <TextBox x:Name="txtAddress2"  Grid.Row="1" Grid.ColumnSpan="5" Margin="80,5,10,5" Height="20" Text="{Binding Path=DealerNetwork.Address2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="35" TabIndex="16"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblAddress3" Content="Address 3:" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,0,93,3" TabIndex="35"/>
+                        <TextBox x:Name="txtAddress3"  Grid.Row="2" Grid.ColumnSpan="5" Margin="80,5,10,5" Height="20" Text="{Binding Path=DealerNetwork.Address3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="35" TabIndex="17"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblAddress4" Content="Address 4:" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,0,93,28" Grid.RowSpan="2" TabIndex="37"/>
+                        <TextBox x:Name="txtAddress4"  Grid.Row="3" Grid.ColumnSpan="5" Margin="80,0,10,0"  VerticalAlignment="Center" Height="20" Text="{Binding Path=DealerNetwork.Address4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="35" TabIndex="18"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblCity" Content="City/State" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,4,10,51" Grid.RowSpan="2" TabIndex="38"/>
+                        <TextBox x:Name="txtCity"  Grid.Row="4" Grid.ColumnSpan="4" Margin="80,6,10,5" Height="20" Text="{Binding Path=DealerNetwork.City,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" MaxLength="35" TabIndex="19" />
+                        <TextBox x:Name="txtState" Grid.Column="4"  Grid.Row="4" Margin="10,5,10,6" Height="20" Text="{Binding Path=DealerNetwork.State,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" MaxLength="2" TabIndex="20"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblZipCode" Content="Zip Code:" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,11,41" TabIndex="40"/>
+
+                        <TextBox x:Name="txtZipCode" Grid.Row="5" Margin="80,1,-9,84" Grid.ColumnSpan="2" Height="20" Text="{Binding Path=DealerNetwork.ZipCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="10" TabIndex="21"/>
+                            <TextBox x:Name="txtZipCity" Grid.Row="5" Margin="12,1,-5,84"  Grid.Column="2" HorizontalAlignment="Left" Width="39"  VerticalAlignment="Bottom" Height="20" Text="{Binding Path=DealerNetwork.ZipPlus4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="4" TabIndex="22"/>
+                        <Button x:Name="btnZipCity"  Grid.Row="5" Grid.Column="3" Margin="10,4,10,76" Grid.ColumnSpan="2" Command="{Binding GetCityCommand,UpdateSourceTrigger=PropertyChanged}" TabIndex="23">
+                            <TextBlock FontFamily="MS Sans Serif" x:Name="tbZipCity" Text="Get City from Zip" TextWrapping="Wrap" TextAlignment="Center" Width="104"  Height="13" RenderTransformOrigin="-0.306,0.315"/>
+                        </Button>
+
+                    </Grid>
+                </GroupBox>
+                <Grid Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2" Margin="-5,6,0,151">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblBacCode"  Content="BAC Code:" Grid.Row="0" Grid.Column="0" Margin="0,-18,-10,222" TabIndex="86"/>
+
+                    <TextBox x:Name="txtBacCode"  Grid.Row="0" Grid.ColumnSpan="4" Margin="90,-13,5,247" Height="20" Text="{Binding Path=DealerNetwork.GmBusnAsctCd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="5" TabIndex="29"/>
+
+                    <Label FontFamily="MS Sans Serif" x:Name="lblSelling" Content="Selling/Delivery/Both:" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,9,7,190" TabIndex="88" />
+
+                    <TextBox x:Name="txtSelling" Grid.Column="2" Grid.ColumnSpan="3" Margin="40,15,5,219" Height="20" Text="{Binding Path=DealerNetwork.SellingDelivInd,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" MaxLength="1" TabIndex="31" MinWidth="45"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblMinority"  Content="Minority Indicator:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,37,0,16" TabIndex="90"/>
+                    <TextBox x:Name="txtMinority" Grid.Column="2" Margin="40,42,5,192" Height="20" Text="{Binding Path=DealerNetwork.MinorityInd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" MaxLength="1" TabIndex="32" MinWidth="45"/>
+
+                    <Label FontFamily="MS Sans Serif" x:Name="lblDealer" Content="Dealer Rating:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,65,0,31" TabIndex="92"/>
+                    <TextBox x:Name="txtDealer" Grid.Column="2" Margin="40,71,5,163" Height="20" Text="{Binding Path=DealerNetwork.DealerRating,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" MaxLength="2" TabIndex="33" MinWidth="45"/>
+
+                    <Label FontFamily="MS Sans Serif" x:Name="lblMfg" Content="Mfg Zone Code:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,94,0,19" TabIndex="94"/>
+                    <TextBox x:Name="txtMfg" Grid.Column="2" Margin="40,98,5,136" Height="20" Text="{Binding Path=DealerNetwork.MfgZoneCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" MaxLength="2" TabIndex="36" MinWidth="45"/>
+
+                    <Label FontFamily="MS Sans Serif" x:Name="lblDraft" Content="Print Dealer Draft:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,122,0,25" TabIndex="96"/>
+                    <TextBox x:Name="txtDraft" Grid.Column="2" Margin="40,125,5,109" Height="20" Text="{Binding Path=DealerNetwork.PrintDealerDraft, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" MaxLength="1" TabIndex="39" MinWidth="45"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="DraftAcc" Content="Draft Acct:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,147,0,11" TabIndex="97"/>
+                    <TextBox x:Name="txtDraftAcc" Grid.Column="3" Margin="-20,150,-10,84" Height="20" Text="{Binding Path=DealerNetwork.DraftAcct2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="4" TabIndex="42" MinWidth="45" MaxWidth="45"/>
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbSeperator" Text="-" Grid.Column="2" Margin="25,150,10,85" FontWeight="ExtraBold" />
+                    <TextBox x:Name="txtDraftAcc1" Grid.Column="1" Margin="16,151,-10,0" Height="20" VerticalAlignment="Top" Text="{Binding Path=DealerNetwork.DraftAcct1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxLength="4" TabIndex="45"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblTaxId" Content="Tax ID:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,174,0,26" TabIndex="105"/>
+                    <TextBox x:Name="txtTaxId" Grid.Column="1" Margin="16,178,7,56" Height="20" Text="{Binding Path=DealerNetwork.TaxId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" MaxLength="9" TabIndex="43"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblTerms" Content="Terms Override:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,198,0,7" TabIndex="119"/>
+
+                    <ComboBox  x:Name="cmbTerms" Grid.Column="2" Margin="20,201,10,27" ItemsSource="{Binding Path=TermsOverrides}"  IsEnabled="{Binding Path=IsActiveTermsOverride,Mode=TwoWay}" 
+                       SelectedItem="{Binding Path=TermsOverride}" SelectedValue="{Binding SelectedTermOverride}" 
+                       SelectedValuePath="TermsOverride" DisplayMemberPath="Description" Grid.ColumnSpan="2" TabIndex="44"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblPayVendor" Content="PayTo Vendor:" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,227,0,39" Grid.RowSpan="10" TabIndex="117"/>
+                    <TextBox x:Name="txtPayVendor" Grid.Column="2" Margin="6,231,8,3" Height="20" Text="{Binding Path=DealerNetwork.PayToVendor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" MaxLength="15" TabIndex="50"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblFactoryCount" Content="Factory Count:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,7,0,32" TabIndex="99"/>
+                    <TextBox x:Name="txtFactoryCount" Grid.Row="9" Grid.Column="2" Margin="6,11,8,159" Height="20" Text="{Binding Path=DealerNetwork.FactoryCountPrior12, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" MaxLength="5" TabIndex="51"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblStock" Content="Stock Count:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,34,0,34" TabIndex="100"/>
+                    <TextBox x:Name="txtStock" Grid.Row="9" Grid.Column="2" Margin="6,39,10,131" Height="20" Text="{Binding Path=DealerNetwork.StockCountPrior12, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" MaxLength="5" TabIndex="52"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblPaymentVia" Content="Payment Via:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,63,0,19" TabIndex="106"/>
+                    <TextBox x:Name="txtPaymentVia" Grid.Row="9" Grid.Column="2" Margin="6,69,10,101" Height="20" Text="{Binding Path=DealerNetwork.PymtVia, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" MaxLength="0" TabIndex="53"/>
+                    <TextBlock FontFamily="MS Sans Serif" x:Name="tbPrintNotice" Text="Print Courtesy Delivery Notice?:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" Margin="3,93,12,37"/>
+                    <ComboBox  x:Name="cmbPrintNotice"  Grid.Column="2"  Grid.Row="9" Margin="20,97,10,67" ItemsSource="{Binding Path=PrintCourtesies}" 
+                       SelectedItem="{Binding Path=PrintCourtesy}" SelectedValue="{Binding SelectedPrintCourtesy}" 
+                       SelectedValuePath="PrintCourtesy" DisplayMemberPath="Description" Grid.ColumnSpan="2" TabIndex="121"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblCertificate" Content="Certification:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,131,0,1" TabIndex="123"/>
+                    <TextBox x:Name="txtCertificate" Grid.Row="9" Grid.Column="1" Margin="26,134,7,0" Height="20" Text="{Binding Path=DealerNetwork.CertInd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="3" MaxLength="3" TabIndex="122"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblBankNo1" Content="Bank No:" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="0,160,0,0" TabIndex="107"/>
+                    <TextBox x:Name="txtBankNo1" Grid.Row="9" Grid.Column="1" Margin="7,165,7,5" Height="20" Text="{Binding Path=DealerNetwork.BankNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveBank,Mode=TwoWay}" Grid.ColumnSpan="3" MaxLength="9" TabIndex="54"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblBankAcc" Content="Bank Acct:" Grid.Row="12" Grid.Column="0" Margin="0,4,-4,33" Grid.RowSpan="4" TabIndex="110"/>
+                    <TextBox x:Name="txtBankAcc" Grid.Row="15" Grid.Column="1" Margin="7,7,8,153" Height="20" Text="{Binding Path=DealerNetwork.BankAccount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveBank,Mode=TwoWay}" Grid.ColumnSpan="3" MaxLength="20" TabIndex="55"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblBankName" Content="Bank Name:" Grid.Row="15" Grid.Column="0" Margin="0,29,28,16" Grid.ColumnSpan="2" TabIndex="108"/>
+                    <TextBox x:Name="txtBankName"  Grid.Row="15" Margin="72,15,7,109" Height="20" Grid.ColumnSpan="4" Text="{Binding Path=DealerNetwork.BankName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveBank,Mode=TwoWay}" MaxLength="30" TabIndex="56"/>
+                    <Label FontFamily="MS Sans Serif" x:Name="lblBankCity" Content="Bank City:" Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="4" Margin="-31,60,31,8" TabIndex="109"/>
+                    <TextBox x:Name="txtBankCity" Grid.Row="15" Margin="36,55,8,85" Height="20" Grid.ColumnSpan="4" Text="{Binding Path=DealerNetwork.BankCity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveBank,Mode=TwoWay}" MaxLength="35" TabIndex="57"/>
+                    <Label x:Name="lblCommission" Grid.Row="15" Grid.Column="0"  Margin="10,99,10,2" Grid.ColumnSpan="3" TabIndex="139">
+                        <TextBlock FontFamily="MS Sans Serif" x:Name="txtbCommission" Text="UK Commission" TextAlignment="Left" Width="83" Height="69" />
+                    </Label>
+                    <TextBox x:Name="txtCommission"  Grid.Row="15" Grid.Column="1" Margin="42,95,8,47" Height="20" Text="{Binding Path=DealerNetwork.UkCommission, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" MaxLength="22" TabIndex="140"/>
+
+                </Grid>
+                <GroupBox FontFamily="MS Sans Serif" x:Name="gbDealer" Grid.Column="0" Grid.Row="3"  Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="Gray" Header="Dealer Comments" Margin="5,205,-20,606"  TabIndex="111">
+                    <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,-2,0" Height="53">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21*"/>
+                            <ColumnDefinition Width="17*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="txtDealerComment" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="-11,-5,1,-60" Text="{Binding Path=DealerNetwork.DealerComments, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" MaxLength="2000" TabIndex="24" />
+                    </Grid>
+                </GroupBox>
+
+
+                <GroupBox x:Name="gbGetReady" Grid.Column="2" Grid.Row="3"  Grid.ColumnSpan="5" BorderThickness="1" BorderBrush="Gray" Header="Get Ready" Margin="30,203,10,457" IsEnabled="{Binding Path=IsEnableGetReady ,Mode=TwoWay}" TabIndex="112">
+                    <Grid Margin="6,0,-2,0" Height="200">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="65.727"/>
+                            <RowDefinition Height="153.607"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="20*"/>
+                            <ColumnDefinition Width="20*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <DataGrid   AutoGenerateColumns="False" SelectionMode="Single"  x:Name="dgReady" Grid.ColumnSpan="4" Grid.Row="0" Grid.Column="0" Margin="0,0,10,120" Height="100" Grid.RowSpan="4"  VerticalScrollBarVisibility="Auto"
+                          ItemsSource="{Binding Path=GetReadies,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" BorderThickness="0.5" IsReadOnly="True" CanUserAddRows="False" IsSynchronizedWithCurrentItem="True"  
+                            Validation.ErrorTemplate="{x:Null}" IsEnabled="{Binding Path=IsEnableGetReadyList ,Mode=TwoWay}"  HeadersVisibility="{Binding Path=VisiblityHeader ,Mode=TwoWay}" TabIndex="65">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseLeftButtonUp">
+                                    <prism:InvokeCommandAction Command="{Binding RowSingleClickCommand}" CommandParameter="{Binding SelectedItem, ElementName=dgReady}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Category" Binding="{Binding GetReadyCategory}" Width="67"/>
+                                <DataGridTextColumn Header="Client" Binding="{Binding ClientId}" Width="64" />
+                                <DataGridTextColumn Header="Amount" Binding="{Binding GetReadyAmount}" Width="68"/>
+                                <DataGridTextColumn Header="Eff Date" Binding="{Binding GetReadyEffectiveDate,StringFormat={}{0:MM/dd/yyyy}}" Width="68"/>
+                                <DataGridTextColumn Header="Last Prgm" Binding="{Binding LastProgram}" Width="100"/>
+                                <DataGridTextColumn Header="Last User" Binding="{Binding LastUser}" Width="66"/>
+                                <DataGridTextColumn Header="Last Chg" Binding="{Binding LastChange}" Width="66"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <Button x:Name="btnAddGetReady" Grid.Column="4" Margin="-5,2,4,14" Command="{Binding Path=AddGetReadyCommand}" Height="50" Grid.Row="2" TabIndex="74" >
+                            <TextBlock FontFamily="MS Sans Serif" x:Name="tbAddGetReady" Text="Add Get Ready" TextWrapping="Wrap" TextAlignment="Center" Width="58" Height="34" />
+                        </Button>
+                        <Button x:Name="btnUpdateGetReady"  Grid.Row="2" Grid.Column="4" Margin="-5,56,4,113" Command="{Binding Path=UpdateGetReadyCommand}" Height="50" Grid.RowSpan="2" TabIndex="75">
+                            <TextBlock FontFamily="MS Sans Serif" x:Name="tbUpdateGetReady" Text="Update Get Ready" TextWrapping="Wrap" TextAlignment="Center" Width="64" Height="34" RenderTransformOrigin="0.522,1.094" Margin="0,5,0,0"/>
+                        </Button>
+                        <Button x:Name="btnDeleteGetReady"  Grid.Row="3" Grid.Column="4" Margin="-5,47,4,57" Height="50" Command="{Binding Path=DeleteGetReadyCommand}" TabIndex="76">
+                            <TextBlock FontFamily="MS Sans Serif" x:Name="tbDeleteGetReady" Text="Delete Get Ready" TextWrapping="Wrap" TextAlignment="Center" Width="58" Height="34"/>
+                        </Button>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkCars" Content="Cars" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,36,67,72" IsChecked="{Binding Path=IsCheckedCars ,Mode=TwoWay}" Command="{Binding Path=ShowGetReadyDetailsCommand}" TabIndex="66"/>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkTrucks" Content="Trucks" Grid.Row="3" Grid.ColumnSpan="3" Margin="77,36,66,72" RenderTransformOrigin="1.226,0.654" IsChecked="{Binding Path=IsCheckedTrucks ,Mode=TwoWay}"  Command="{Binding Path=ShowGetReadyDetailsCommand}" TabIndex="67"/>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkLocal" Content="Local" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="67,37,67,70" IsChecked="{Binding Path=IsCheckedLocal ,Mode=TwoWay}" Command="{Binding Path=ShowGetReadyDetailsCommand}" TabIndex="68"/>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkLuxury" Content="Luxury" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Margin="68,36,68,70" IsChecked="{Binding Path=IsCheckedLuxury ,Mode=TwoWay}" Command="{Binding Path=ShowGetReadyDetailsCommand}" TabIndex="69"/>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkFactry" Content="Factry" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,55,66,53" RenderTransformOrigin="0.529,1.783" IsChecked="{Binding Path=IsCheckedFactry ,Mode=TwoWay}" IsEnabled="{Binding Path=IsActiveFactry,Mode=TwoWay}" TabIndex="131"/>
+                        <CheckBox FontFamily="MS Sans Serif" x:Name="chkStocks" Content="Stocks" Grid.Row="3" Grid.ColumnSpan="3" Margin="77,55,67,59" IsChecked="{Binding Path=IsCheckedStocks ,Mode=TwoWay}" TabIndex="132"/>
+
+                        <Label FontFamily="MS Sans Serif" x:Name="lblClient" Content="Client ID:" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,78,5,17" TabIndex="113"/>
+                        <TextBox  x:Name="txtClient"  Grid.Row="3" Margin="5,103,10,31" Text="{Binding Path=GetReadyModel.ClientId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" MaxLength="10" TabIndex="70" />
+                        <Label FontFamily="MS Sans Serif" x:Name="lblAmount" Content="Amount:" Grid.Row="3" Grid.Column="1" Margin="4,79,66,16" Grid.ColumnSpan="2" TabIndex="114"/>
+                        <TextBox x:Name="txtAmount"  Grid.Row="3" Grid.Column="1" Margin="3,102,10,32" Text="{Binding Path=GetReadyModel.GetReadyAmount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged }" Height="20" MaxLength="0" TabIndex="72"/>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblEffectiveDate" Content="Effective Date:" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Margin="5,78,65,25" TabIndex="115"/>
+                        <TextBox  x:Name="txtEffectiveDate" Grid.Row="3" Grid.Column="2" Margin="10,101,46,33" Grid.ColumnSpan="2" Text="{Binding Path=EffectiveDate, Mode=TwoWay, 
+                 StringFormat={}{0:MM/dd/yyyy}}" FontFamily="MS Sans Serif" Height="20" MaxLength="10" TabIndex="73" >
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="LostFocus">
+                                    <prism:InvokeCommandAction Command="{Binding EffectiveDateLostFocusCommand}" CommandParameter="{Binding EffectiveDate}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </TextBox>
+                        <ComboBox x:Name="cmbReadyItems" Grid.Column="4" Margin="10,106,10,28" Grid.Row="3" Height="20" TabIndex="74"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox IsEnabled="False" FontFamily="MS Sans Serif" x:Name="gbLicense" Grid.Column="0" Grid.Row="3"  Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="Gray" Header="Licensing" Margin="5,296,-20,489" TabIndex="118">
+                    <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,8,0" Height="93">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="46*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label FontFamily="MS Sans Serif" x:Name="lblLicenseIn" Content="Can License In:" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,23,121" RenderTransformOrigin="0.532,-0.164" TabIndex="145"/>
+                        <Button FontFamily="MS Sans Serif" x:Name="btnSelectLicence" Grid.Column="0" Margin="10,57,0,58" Grid.ColumnSpan="3" Content="Select Licence States" TabIndex="144"/>
+
+                    </Grid>
+                </GroupBox>
+                <CheckBox FontFamily="MS Sans Serif" x:Name="chkUsedVehicle" Content="Does Not Accept Used Vehicles" Grid.Row="3" Margin="5,418,57,405" Grid.ColumnSpan="3" TabIndex="130"/>
+                <Line Stretch="Fill" Stroke="Black" X2="1" Grid.Row="3" Grid.ColumnSpan="7" Margin="5,13,10,0" RenderTransformOrigin="0.502,0.476"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblProgram" Content="Creation Program:" Grid.Row="3" Grid.ColumnSpan="2" Margin="-4,459,40,384" TabIndex="60"/>
+                <TextBox x:Name="txtProgram" Grid.Row="3" Margin="5,485,-10,395" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.CreationPrgm, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="64" />
+                <Label FontFamily="MS Sans Serif" x:Name="lblUser"  Content="Creation User:" Grid.Row="3" Grid.ColumnSpan="2" Margin="15,459,50,385" Grid.Column="1" TabIndex="61"/>
+                <TextBox x:Name="txtUser" Grid.Row="3" Margin="15,485,-8,395" Grid.Column="1" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.CreationUser, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="77"/>
+                <Label  x:Name="lblCreationDate" FontFamily="MS Sans Serif" Content="Creation Date:" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="10,459,62,385" TabIndex="62"/>
+                <TextBox x:Name="txtCreationDate" Grid.Column="2"  Grid.Row="3" Margin="15,485,-5,395" Height="20" IsEnabled="False"  Text="{Binding Path=DealerNetwork.CreationDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="78"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblLastUsed" Content="Last Used:" Grid.Row="3" Grid.Column="3" Margin="10,458,2,388" TabIndex="63"/>
+                <TextBox x:Name="txtLastUsed" Grid.Column="3"  Grid.Row="3" Margin="10,485,2,395" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.LastUsedDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="79"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblLastProgram" Content="Last Program:" Grid.Row="3" Grid.Column="4" Margin="-2,458,0,415" TabIndex="80"/>
+                <TextBox x:Name="txtLastProgram" Grid.Column="4"  Grid.Row="3" Margin="5,485,10,395" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.LastPrgm, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="83"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblLastUser" Content="Last User:" Grid.Row="3" Grid.Column="5" Margin="-1,459,10,413" HorizontalAlignment="Left" TabIndex="81"/>
+                <TextBox x:Name="txtLastUser" Grid.Column="5"  Grid.Row="3" Margin="2,485,10,395" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.LastUser, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxLength="0" TabIndex="84"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblLastChg" Content="Last Chg:" Grid.Row="3" Margin="-2,458,20,416" Grid.Column="6" TabIndex="82"/>
+                <TextBox x:Name="txtLastChg" Grid.Column="6"  Grid.Row="3" Margin="4,484,7,396" Height="20" IsEnabled="False" Text="{Binding Path=DealerNetwork.LastChg, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, 
+                         StringFormat={}{0:MM/dd/yyyy}}"  MaxLength="0" TabIndex="85" />
+                <Button FontFamily="MS Sans Serif" x:Name="btnCopyDealer" Margin="5,519,-10,352" Content="Copy Dealer" Grid.Row="3" Command="{Binding Path=InsertCommand }" TabIndex="87" IsEnabled="{Binding Path=IsEnableCopyDealerButton,Mode=TwoWay}"/>
+                <Button FontFamily="MS Sans Serif" x:Name="btnUpdate" Grid.Column="1" Margin="20,519,-10,353" Content="Update" Grid.Row="3" Command="{Binding Path=UpdateCommand}" TabIndex="89" IsEnabled="{Binding Path=IsEnableUpdateDealerButton,Mode=TwoWay}"/>
+                <Button FontFamily="MS Sans Serif" x:Name="btnDelete" Grid.Column="2" Margin="25,518,-40,354" Content="Delete" RenderTransformOrigin="1.566,8.027" Command="{Binding Path=DeleteCommand }" Grid.Row="3" TabIndex="91" IsEnabled="{Binding Path=IsEnableDeleteButton,Mode=TwoWay}"/>
+                <Button FontFamily="MS Sans Serif" x:Name="btnCancel" Grid.Column="3" Margin="55,517,-80,355" Content="Cancel" Grid.Row="3" Command="{Binding Path=CancelCommand }" TabIndex="93" IsEnabled="{Binding Path=IsEnableCancelButton,Mode=TwoWay}"/>
+                <Button FontFamily="MS Sans Serif" x:Name="btnClose" Margin="88,516,-110,356" Content="Close" Grid.Row="3" Grid.Column="4" Command="{Binding Path=CloseCommand }" TabIndex="95"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblKeyDealer" Content="Key Dealer:" Grid.Row="3" Margin="-2,551,-20,299" TabIndex="133"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblClient1" Content="Client:" Grid.Row="3" Grid.Column="1" Margin="-20,551,-25,299" TabIndex="137"/>
+                <TextBox x:Name="txtClient1"   Margin="20,553,10,327" Grid.Column="1" Grid.Row="3" Height="20" Text="{Binding Path=DealerNetwork.KdClient, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveKd,Mode=TwoWay}"  MaxLength="4" TabIndex="135"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblDiv" Content="Div:" Grid.Row="3" Margin="-5,551,10,302" Grid.Column="2" TabIndex="136"/>
+                <TextBox x:Name="txtDiv"  Margin="25,553,25,327" Grid.Column="2" Grid.Row="3"  Height="20" Text="{Binding Path=DealerNetwork.KdDiv, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveKd,Mode=TwoWay}"  MaxLength="2" TabIndex="134" />
+                <Label FontFamily="MS Sans Serif" x:Name="lblCanada" Content="Canada Volume Rebates:" Grid.Row="3" Margin="-20,549,28,307" Grid.ColumnSpan="2" Grid.Column="3" TabIndex="129"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblFactory" Content="Factory:" Grid.Row="3" Margin="-48,549,64,309" Grid.Column="5" Grid.ColumnSpan="2" TabIndex="125"/>
+                <TextBox x:Name="txtFactory"  Margin="0,553,30,327" Grid.Column="5" Grid.Row="3" Height="20" Text="{Binding Path=DealerNetwork.CanVolumeFactory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveVolume,Mode=TwoWay}"  MaxLength="5" TabIndex="126"/>
+                <Label FontFamily="MS Sans Serif" x:Name="lblStock1" Content="Stock:" Grid.Row="3" Margin="-30,551,60,312" Grid.Column="6" RenderTransformOrigin="0.203,0.458" TabIndex="127"/>
+                <TextBox x:Name="txtStock1"  Margin="10,552,4,328" Grid.Column="6" Grid.Row="3" Height="20" Text="{Binding Path=DealerNetwork.CanVolumeStock, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Path=IsActiveVolume,Mode=TwoWay}"  MaxLength="5" TabIndex="128"/>
+                <Button FontFamily="MS Sans Serif"  x:Name="lblManufacturer" Margin="85,574,5,0" Grid.ColumnSpan="3" Content="Manufacturer Specific Info" Grid.Row="3" Grid.Column="4" Height="22" VerticalAlignment="Top" TabIndex="58"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

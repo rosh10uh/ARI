@@ -1,0 +1,1 @@
+﻿SELECT  country_code as CountryCode, country_name as CountryName  FROM Country;
