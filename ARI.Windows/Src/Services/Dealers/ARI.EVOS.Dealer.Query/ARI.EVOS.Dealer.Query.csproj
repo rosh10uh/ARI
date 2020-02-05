@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sql\GetCityFromZip.sql" />
+    <None Remove="Sql\GetContactEmailDetail.sql" />
+    <None Remove="Sql\GetCountryDetail.sql" />
+    <None Remove="Sql\GetDealer.sql" />
+    <None Remove="Sql\GetDealersList.sql" />
+    <None Remove="Sql\GetMakeDetail.sql" />
+    <None Remove="Sql\GetReadyDetails.sql" />
+    <None Remove="Sql\GetUserSecurityCode.sql" />
+    <None Remove="Sql\SearchDealers.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\GetReadyDetails.sql" />
+    <EmbeddedResource Include="Sql\GetCityFromZip.sql" />
+    <EmbeddedResource Include="Sql\GetDealersList.sql" />
+    <EmbeddedResource Include="Sql\GetMakeDetail.sql" />
+    <EmbeddedResource Include="Sql\GetUserSecurityCode.sql" />
+    <EmbeddedResource Include="Sql\GetCountryDetail.sql" />
+    <EmbeddedResource Include="Sql\GetContactEmailDetail.sql" />
+    <EmbeddedResource Include="Sql\GetDealer.sql" />
+    <EmbeddedResource Include="Sql\SearchDealers.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Common.Models\ARI.EVOS.Common.Models.csproj" />
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\ARI.EVOS.Dealers.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Dapper\Chassis.Dapper.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapper\" />
+    <Folder Include="QueryHandlers\" />
+  </ItemGroup>
+
+</Project>

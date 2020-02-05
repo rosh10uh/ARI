@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GetReady.cs" />
+    <Compile Remove="Interface\IGetReady.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\ARI.EVOS.Dealers.Models.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Command\ARI.EVOS.Dealer.Command.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Query\ARI.EVOS.Dealer.Query.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Chassis.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Chassis.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chassis.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Chassis.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Chassis.Domain/Chassis.Domain.csproj",
+      "msbuildProject": "../../Common/Chassis.Domain/Chassis.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "Chassis.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\roshan.patel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Roshan Patel\\ARI\\Design\\LoginLayout\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj",
+      "projectName": "ARI.EVOS.Dealer.Domain",
+      "projectPath": "C:\\Roshan Patel\\ARI\\Design\\LoginLayout\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\ARI.EVOS.Dealer.Domain.csproj",
+      "packagesPath": "C:\\Users\\roshan.patel\\.nuget\\packages\\",
+      "outputPath": "C:\\Roshan Patel\\ARI\\Design\\LoginLayout\\ARI\\ARI.EVOS\\Src\\Services\\Dealers\\ARI.EVOS.Dealer.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\roshan.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Roshan Patel\\DRC\\Refactor\\30-07-2019\\package": {},
+        "http://103.249.120.58:8081/repository/nuget-group": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Roshan Patel\\ARI\\Design\\LoginLayout\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj": {
+              "projectPath": "C:\\Roshan Patel\\ARI\\Design\\LoginLayout\\ARI\\ARI.EVOS\\Src\\Services\\Common\\Chassis.Domain\\Chassis.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

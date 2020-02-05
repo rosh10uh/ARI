@@ -1,0 +1,22 @@
+﻿using System;
+
+namespace ARI.EVOS.Dealer.Command.Commands
+{
+    /// <summary>
+    /// This class contains add get ready command properties
+    /// </summary>
+    public class AddGetReadyCommand : GetReadyCommand
+    {
+        public string ClientId { get; private set; }
+        public decimal? GetReadyAmount { get; private set; }
+        public DateTime? GetReadyEffectiveDate { get; private set; }
+        public string LastProgram { get; private set; }
+        public string LastUser { get; private set; }
+        public DateTime? LastChange { get; private set; }
+
+        public AddGetReadyCommand()
+        {
+
+        }
+    }
+}

@@ -1,0 +1,1 @@
+﻿Select trim(user_sec_department) || trim(user_sec_workgroup) UserScecurityCode from user_security where user_id = :UserId 

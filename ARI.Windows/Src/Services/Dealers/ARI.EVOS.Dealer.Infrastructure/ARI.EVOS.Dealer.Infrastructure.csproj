@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mappings\BankDetailMapping.cs" />
+    <Compile Remove="Repositories\GetReadyUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Chassis.Domain.NHibernate\Chassis.Domain.NHibernate.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Domain\ARI.EVOS.Dealer.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extension\" />
+    <Folder Include="Interface\Specification\" />
+  </ItemGroup>
+
+</Project>

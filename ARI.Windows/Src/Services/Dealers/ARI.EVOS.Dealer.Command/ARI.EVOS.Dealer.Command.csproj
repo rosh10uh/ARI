@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ARI.EVOS.Infra\ARI.EVOS.Infra.csproj" />
+    <ProjectReference Include="..\..\..\Models\ARI.EVOS.Dealers.Models\ARI.EVOS.Dealers.Models.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.Command\Chassis.Command.csproj" />
+    <ProjectReference Include="..\..\Common\Chassis.RegisterServices\Chassis.RegisterServices.csproj" />
+    <ProjectReference Include="..\ARI.EVOS.Dealer.Infrastructure\ARI.EVOS.Dealer.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extension\" />
+  </ItemGroup>
+
+</Project>
